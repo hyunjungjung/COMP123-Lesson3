@@ -3,19 +3,16 @@ using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Lesson3;
-namespace UnitTestForLesson3
+
+namespace Lesson3
 {
-    /// <summary>
-    /// Summary description for UnitTestForPersonClass
-    /// </summary>
     [TestClass]
     public class UnitTestForPersonClass
     {
-        public UnitTestForPersonClass()
+        [TestMethod]
+        public void TestMethod1()
         {
-            //
-            // TODO: Add constructor logic here
-            //
-        }      
+
+        }
     }
 }
