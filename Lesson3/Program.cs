@@ -22,17 +22,32 @@ namespace Lesson3
         public static void Main(string[] args)
         {
             // create a new instance of the Person Class
-            Person person;
-            person = new Person("Tom");
+            Person jason = new Person();
+            jason.Name = "Tanya";
+            jason.Age = 26;
+            jason.SaysHello();
+            jason.ShowAge();
 
-            Console.WriteLine(person.Name);
-            // set a value in the Name property of the Person Class
-            //person.Name = "Tom";
+            Console.WriteLine();
 
-            // get the Name value and print to console
-            Console.WriteLine(person.Name);
+            Person joanne;
+            joanne = new Person("Joanne");
+            joanne.Age = 29;
+            joanne.SaysHello();
+            joanne.ShowAge();
 
-            
+            Console.WriteLine();
+
+            Person angela = new Person(30);
+            angela.Name = "Mark";
+            angela.SaysHello();
+            angela.ShowAge();
+
+            Console.WriteLine();
+
+            Person sue = new Person("Mary", 23);
+            sue.SaysHello();
+            sue.ShowAge();
             
         }
 
