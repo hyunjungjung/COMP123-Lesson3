@@ -23,7 +23,7 @@ namespace Lesson3
         {
             // create a new instance of the Person Class
             Person jason = new Person();
-            jason.Name = "Tanya";
+            jason.Name = "Jason";
             jason.Age = 26;
             jason.SaysHello();
             jason.ShowAge();
@@ -39,13 +39,13 @@ namespace Lesson3
             Console.WriteLine();
 
             Person angela = new Person(30);
-            angela.Name = "Mark";
+            angela.Name = "Angela";
             angela.SaysHello();
             angela.ShowAge();
 
             Console.WriteLine();
 
-            Person sue = new Person("Mary", 23);
+            Person sue = new Person("Sue", 23);
             sue.SaysHello();
             sue.ShowAge();
             

@@ -67,10 +67,10 @@ namespace Lesson3
          */
         public Person()
         {
-            // Initialize public properties
-            this.Name = "Unknown Name!!";
-            this.Age = 0;
+            this._initialize();
         }
+
+
 
         /**
          * <summary>
@@ -83,8 +83,8 @@ namespace Lesson3
          */
         public Person(string name)
         {
+            this._initialize();
             this.Name = name;
-            this.Age = 0;
         }
         /**
          * <summary>
@@ -98,7 +98,7 @@ namespace Lesson3
 
         public Person(int age)
         {
-            this.Name = "Unknown Name!!";
+            this._initialize();
             this.Age = age;
         }
         /**
@@ -117,6 +117,23 @@ namespace Lesson3
             this.Name = name;
             this.Age = age;
         }
+        // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        /**
+         * <summary>
+         * This method initializes the public properties Name and Age
+         * </summary>
+         * 
+         * @private
+         * @method _initialize
+         * @returns {void}
+         * 
+         */
+        private void _initialize()
+        {
+            this.Name = "Unknown Name!!";
+            this.Age = 0;
+        }
+
         // PUBLIC METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         /**
          * <summary>
